@@ -1,7 +1,7 @@
-import one.two.three.Utils
+// import one.two.three.Utils
 
 void call(Map context = [:]) {
 
-  echo Utils.SLACK_GOOD
+  echo library('shared2').one.two.three.Utils.SLACK_GOOD
 
 }
