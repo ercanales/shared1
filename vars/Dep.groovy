@@ -2,6 +2,8 @@
 
 void call(Map context = [:]) {
 
-  echo library('shared2').one.two.three.Utils.SLACK_GOOD
+  def utils = library('shared2').one.two.three.Utils.new(this)
+  
+  echo utils.SLACK_GOOD
 
 }
